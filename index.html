@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+	<title>demo</title>
+</head>
+<style type="text/css">
+	.container{background: #FFF;width: 100%;border-radius: 5px;;margin-top: 50px; }
+	body{background:#f8faf0}
+	.header{
+		
+		height: 120px;
+
+	}
+	.nabar{
+		
+		height: 50px;
+	}
+	.top{
+		width: 100%;
+		height: 400px;
+		
+
+	}
+	.top-left{
+		height: 400px;
+		
+		width: 50%;
+
+	}
+	.top-1{
+		height: 50%;
+		
+		
+	}
+	.lisview{
+		float: left;
+		width: 50%;
+		box-shadow: 0px 0px 5px rgb(150, 150, 150);
+		display: block;
+	}
+	.listing{
+		float: left;
+	}
+	.text-1{
+		float: left;
+		display: block;
+		width: 50%;
+		margin: 10px 0px 0px 10px;
+	}
+	.lisview img{
+		margin: 10px 0px 0px 10px;
+	}
+	
+    .lisview h2{
+     color:#CC3636;
+	font-size:1.2em;
+	font-family: 'Monda', sans-serif;
+	font-weight : normal;
+	text-transform:uppercase;
+    }
+    .lisview p{
+    font-size:0.8125em;	
+	color: #333;
+	line-height: 1.6em;
+	font-family : verdana, arial, helvetica, helve, sans-serif;
+	padding:0; 
+    }
+    .lisview button{
+     line-height:1.9em;
+	margin-top:0.5em;
+	border-radius: 5px;
+	background-color:#f7c443;
+    }
+    .top-left{
+    	float: left;
+    	width:49%;
+	margin-left:1%;
+	padding-top: 15px;
+    }
+    ul li img{
+         margin: 0px 10px 0px 0px;
+    }
+    
+   .center-2{
+   	   width: 98%;
+   	   height: 80px;
+   	   border: 1px solid #f7edd2;
+   	   border-radius: 5px;
+   	   margin: auto;
+   	   position: relative;
+
+   }
+   .sort{
+	float:left;
+	width:14%;
+	margin-left:150px;
+	padding-top:5px;
+}
+.sort p{
+	display:inline;
+	font-size:0.8125em;
+	color: #333;
+}
+.sort select{
+	display:inline;
+	font-size:1.1em;
+	color: #333;
+	margin-left:2px;
+}
+.heading{
+	float:left;
+	margin-right:10%;
+}
+.heading h3{
+	font-family: 'Monda', sans-serif;
+	font-size:22px;
+	color:#602D8D;
+	text-transform:uppercase;
+	margin :30px 0px 0px 20px;
+}
+.page-nos span{
+	font-size: 36px;
+	font-family: 'Monda', sans-serif;
+	text-shadow: 2px 2px 2px #eff53b;
+	font-weight: 900;
+	padding: 30px 0px 0px 165px;
+	position: absolute;
+}
+.content{
+	width: 100%;
+	height: 470px;
+	position: relative;
+
+}
+.content-md-col{
+	margin: auto;
+	position: absolute;
+	
+}
+
+.content-center{
+	
+	text-align: center;
+	margin: 10px 0px 0px 12px;
+	width: 23%;
+	float: left;
+box-shadow: 0px 0px 5px rgb(150, 150, 150);
+
+}
+.content-center img{
+	margin-top: 15px;
+}
+.content-center button{
+	width: 60%;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	background-color:#f7c443;
+}
+.content-center span img{
+	margin: 0px;
+}
+.content-center-sc{
+	text-align: center;
+	margin: 10px 0px 0px 20px;
+	width: 23%;
+	float: left;
+box-shadow: 0px 0px 5px rgb(150, 150, 150);}
+.content-center-sc img{
+	margin-top: 10px;
+}.content-center-sc button{
+	width: 60%;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	height: 40px;
+	background-color:#f7c443;
+}
+.content-center-sd span img{
+	margin: 0px;
+}
+.content-center-sd{
+	text-align: center;
+	margin: 10px 0px 0px 20px;
+	width: 23%;
+	float: left;
+box-shadow: 0px 0px 5px rgb(150, 150, 150);}
+.content-center-sd img{
+	margin-top: 14px;
+}.content-center-sd button{
+	width: 60%;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	background-color: #f7c443;
+}
+.content-center-sd span img{
+	margin: 0px;
+}
+.price{
+	margin: 0px 0px 0px 20px;
+	color: red;
+}
+.head{
+	color: #97eb52;
+}
+.content-sidebar{margin: 0px;padding: 0px;}
+.content-sidebar ul{
+	display: block;
+	
+
+}
+.content-sidebar ul li{
+	list-style: none;
+	height: 50px;
+	border-bottom: 1px solid black;
+	line-height: 50px;
+}
+.content-sidebar li a{
+	text-decoration: none;
+	display: block;
+	color: black;
+
+}
+ .content-sidebar a:hover{
+ 	color: white;
+ 	background-color: #d3f53b;
+
+ }
+.content-center-sb{
+	margin: 0px 0px 0px 25px; 
+	width: 23%;
+	float: left;
+	background-color: #adeb26;
+
+}
+
+strike{color: black;}
+.header ul li{
+	float: right;
+	list-style: none;
+	margin: 35px 20px 0px 0px;
+	display: block;
+	border-right: 1px solid black;
+	text-align: center;
+	
+}
+input[type=text]{
+
+        border-radius: 3px;
+        width: 300px;
+        height: 35px;
+       
+        
+}
+.header img {float: left;}
+input[type=submit]{
+	background-color: #b4fa4b;
+	height: 35px;
+	border-radius: 3px;
+	
+}
+ .header a{
+	 text-decoration: none;
+	 display: block;
+	 color: black;
+     font-size: 17px;
+}
+.header ul li img{
+   padding-top: 5px;
+   margin-right: 5px;
+}
+.content-img img{margin: auto; }
+.center-md{
+	
+	width: 98%;
+   	   height: 120px;
+   	   border: 1px solid #ecf542;
+   	   border-radius: 5px;
+   	   margin: auto;
+   	   
+   	   margin-top: 10px;
+}
+.nabar{;overflow: hidden;  background: #063c63; border-radius: 5px; margin-top: 50px}
+.nabar ul{margin: 0px,padding:0px;} 
+.nabar ul li{
+	float: left;
+	width: 10%;
+	line-height: 50px;
+	list-style: none;
+	text-align: center;
+	display: block;
+	font-size: 16px;
+}
+.active a {background: #5a88ca; color:#FFF;}
+.nabar a{color: #FFF;text-decoration: none;display: block;}
+.nabar a:hover{background-color: #5a88ca}
+button:hover{background-color: #3cde1f}
+
+.content-md{
+	width: 100%;
+	height: 400px;
+	position: relative;
+   
+}
+.content-md-col-3{
+	margin: auto;
+	position: absolute;
+	
+}
+
+.content-md-center{
+	
+	text-align: center;
+	margin: 10px 0px 0px 12px;
+	width: 23%;
+	float: left;
+box-shadow: 0px 0px 5px rgb(150, 150, 150);
+
+}
+.content-md-center img{
+	margin-top: 15px;
+}
+.content-md-center button{
+	width: 60%;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	background-color:#f7c443;
+}
+.content-md-center span img{
+	margin: 0px;
+}
+.content-md-center-sc{
+	text-align: center;
+	margin: 10px 0px 0px 20px;
+	width: 23%;
+	float: left;
+box-shadow: 0px 0px 5px rgb(150, 150, 150);}
+.content-md-center-sc img{
+	margin-top: 10px;
+}.content-md-center-sc button{
+	width: 60%;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	height: 40px;
+	background-color:#f7c443;
+}
+.content-md-center-sd span img{
+	margin: 0px;
+}
+.content-md-center-sd{
+	text-align: center;
+	margin: 10px 0px 0px 20px;
+	width: 23%;
+	float: left;
+box-shadow: 0px 0px 5px rgb(150, 150, 150);}
+.content-md-center-sd img{
+	margin-top: 14px;
+}.content-md-center-sd button{
+	width: 60%;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	background-color: #f7c443;
+}
+.content-md-center-sd span img{
+	margin: 0px;
+}
+
+.content-md-sidebar{margin: 0px;padding: 0px;}
+.content-md-sidebar ul{
+	display: block;
+	
+
+}
+.content-md-sidebar ul li{
+	list-style: none;
+	height: 50px;
+	border-bottom: 1px solid black;
+	line-height: 50px;
+}
+.content-md-sidebar li a{
+	text-decoration: none;
+	display: block;
+	color: black;
+
+}
+ .content-md-sidebar a:hover{
+ 	color: white;
+ 	background-color: #d3f53b;
+
+ }
+.content-md-center-sb{
+	margin: 0px 0px 0px 25px; 
+	width: 23%;
+	float: left;
+	background-color: #adeb26;
+
+}
+ .footer{background-color:#646b66; width: 100%; height: 200px;margin-top: 20px;position: relative; }
+   	  .wrapper{
+    	width:90%;
+    	float: left;
+    	
+    }
+    .col_1 { 
+		margin: 1% 0 1% 0%;
+		float: left;
+		width: 300px;
+		
+	}
+	.col_1 li{list-style: none;}
+	.col_1 li a{color: white; display: block; text-decoration: none;}
+	.col_1 a:hover{color: blue;}
+	.span_1 {
+		width:95%;
+		padding:0 2.5%;
+		border:none; 
+	}
+    .span_1 h4 {
+    	font-size:1em;
+		letter-spacing: 0;
+		padding-top: 5px;
+    }
+    .social-icons li{
+    	padding-top:3%;
+    	float: left;
+    	list-style: none;
+    	
+    }
+    .social-icons a img:hover{opacity: 0.2} img:hover{opacity: 0.6}
+</style>
+<body>
+	 <div class="header">
+	 		
+	 		<img src="img/logo.png" height="80px" >
+	 	<ul>		
+			
+             <li><a href="register.php">Register</a></li>
+            <li><a href="login.php">Login</a></li>
+            <li><img src="img/login.png"></li>
+			<li><form><input type="text" placeholder=" ....."><input type="submit" value="SEARCH"></form></li>
+           
+					</ul>
+	</div>
+	  <div class="nabar">
+	 	<ul>
+                        <li class="active"><a href="index.htm">Home</a></li>
+                        <li><a href="shop.htm">Shop page</a></li>
+                        <li><a href="single-product.htm">Single product</a></li>
+                        <li><a href="cart.htm">Cart</a></li>
+                        <li><a href="checkout.htm">Checkout</a></li>
+                        <li><a href="#">Category</a></li>
+                        <li><a href="#">Others</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+
+	 </div>
+	     <div class="container">
+ 
+         <div class="top">
+         	<div class="top-left">
+         		<div class="top-1">
+         			<div class="lisview">
+         				<div class="listing">
+         					<img src="img/pic4.png" alt="" height="160px" />
+         				</div>
+						
+						<div class="text-1">
+							 <h2>Iphone</h2>
+						     <p>Lorem ipsum dolor sit amet sed do eiusmod.</p>
+						     <button type="button">Add to cart</button>
+					    </div>
+					</div>
+					<div class="lisview">
+         				<div class="listing">
+         					<img src="img/pic3.png" alt="" />
+         				</div>
+						
+						<div class="text-1">
+							<h2>Samsung</h2>
+						    <p>Lorem ipsum dolor sit amet, sed do eiusmod.</p>
+						    <button type="button">Add to cart</button>
+					    </div>
+					</div>
+				</div>
+         	    <div class="top-1">
+         			<div class="lisview">
+         				<div class="listing">
+         					<img src="img/pic5.jpg" alt="" / width="90px" height="170px">
+         				</div>
+						
+						<div class="text-1">
+							<h2>Acer</h2>
+						<p>Lorem ipsum dolor sit amet, sed do eiusmod.</p>
+						     <button type="button">Add to cart</button>
+					    </div>
+					</div>
+					<div class="lisview">
+         				<div class="listing"> 
+         					<img src="img/pic1.png" alt="" / width="110px" height="170px">
+         				</div>
+						
+						<div class="text-1">
+							<h2>Canon</h2>
+						  <p>Lorem ipsum dolor sit amet, sed do eiusmod.</p>
+						    <button type="button">Add to cart</button>
+					    </div>
+					</div>
+					</div>
+     	</div>
+     	<script>
+		$(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:0,
+    nav:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+});
+</script>
+ <style>
+ 	#Wp_slider{
+ 		width: 100%;
+ 		margin:0px auto;
+ 		padding: 15px 0px 0px 10px;
+ 	}
+ 	#Wp_slider a img:hover{opacity: 0.8}
+ </style>
+     	<div id="Wp_slider">
+  	<div class="owl-carousel owl-theme">
+     <div class="items">
+     	<a href=""><img src="img/h4.png" width="800px" height="360px"></a>
+     </div> 
+      <div class="items">
+     	<a href=""><img src="img/h5.png" width="800px" height="360px"> </a>
+     </div> 
+      <div class="items">
+     	<a href=""><img src="img/4.jpg" width="800px" height="360px"></a>
+     </div> 
+      <div class="items">
+     	<a href=""><img src="img/h6.png" width="800px" height="360px"></a>
+     </div> 
+</div>
+  </div>
+	        
+     </div>
+     <div class="center-2">
+     	<div class="heading">
+    		<h3>Feature Products</h3>
+    		</div>
+     	<div class="sort">
+    		<p>Sort by:
+    			<select>
+    				<option>Samsung</option>
+    				<option>Iphone</option>
+    				<option>Oppo</option>
+    				<option>Xiaomi redme </option>
+    				<option>Vinmart</option>
+    				<option>Realme</option>  				   				
+    			</select>
+    		</p>
+    		</div>
+    		<div class="page-nos">
+    		<span><marquee>Mobile<b style="color: white"> store<b/></marquee></span>
+    		</div>
+     </div>
+             
+     <div class="content">
+     	<div class="content-md-col">
+     	 <div class="content-center"> 
+					 <img src="img/product-2.jpg" height="270px">
+					 <div class="discount">
+					</div>
+					 <span class="head" >Duis aute irure dolor in reprehenderit sed do eiusmod tempor incididunt</span>
+					 <p><strike>$438.99</strike><span class="price">$403.66</span></p>
+				     <button type="button"><span><img src="img/cart.jpg" alt="" /> Add to Cart</span> </button>
+				    
+				   
+				</div>
+      <div class="content-center-sd"> 
+      	<img src="img/product-4.jpg" height="270px">
+      	 <div class="discount">
+					</div>
+					 <span class="head" >Duis aute irure dolor in reprehenderit sed do eiusmod tempor incididunt</span>
+					 <p><strike>$640.89</strike><span class="price">$620.87</span></p>
+				     <button type="button"><span><img src="img/cart.jpg" alt="" /> Add to Cart</span> </button>
+				    
+      </div>
+       <div class="content-center-sc"> 
+       	<img src="img/product-5.jpg" height="270px">
+       	<div class="discount">
+					</div>
+					 <span class="head" >Duis aute irure dolor in reprehenderit sed do eiusmod tempor incididunt</span>
+					 <p><strike>$240.66</strike><span class="price">$220.97</span></p>
+				     <button type="button"><span><img src="img/cart.jpg" alt="" /> Add to Cart</span> </button>
+				    
+       </div>
+        <div class="content-center-sb">
+        	<div class="content-sidebar">
+		    		
+						<ul>											
+							<li><a href="#">Apple</a></li>
+							<li><a href="#">Blackberry</a></li>												
+							<li><a href="#">Dell Mobile Phones </a></li>												
+							<li><a href="#">HTC</a></li>
+							<li><a href="#">LG Mobiles</a></li>							
+							<li><a href="#">Maxx</a></li>							
+							<li><a href="#">Samsung Mobiles</a></li>
+							<li><a href="#">Sony Ericsson Mobiles</a></li>	
+							<li><a href="#">Oppo Max</a></li>						
+						</ul>
+		    	</div>
+		    </div>
+		     </div>
+     </div>
+         <div class="center-md">
+         	<div class="brand-list">
+                            <img src="img/brand1.png" alt="" pagespeed_url_hash="2018972994" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                            <img src="img/brand2.png" alt="" pagespeed_url_hash="2313472915" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                            <img src="img/brand3.png" alt="" pagespeed_url_hash="2607972836" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                            <img src="img/brand4.png" alt="" width="260px" pagespeed_url_hash="2902472757" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                           
+                                                    
+                        </div>
+
+         </div>
+         <div class="content-md">
+     	<div class="content-md-col-3">
+     	 <div class="content-md-center"> 
+					 <img src="img/new-pic1.jpg">
+					 <div class="discount">
+					</div>
+					 <span class="head" >Duis aute irure dolor in reprehenderit sed do eiusmod tempor incididunt</span>
+					 <p><strike>$438.99</strike><span class="price">$403.66</span></p>
+				     <button type="button"><span><img src="img/cart.jpg" alt="" /> Add to Cart</span> </button>
+				    
+				   
+				</div>
+      <div class="content-md-center-sd"> 
+      		<img src="img/new-pic2.jpg">
+      	 <div class="discount">
+					</div>
+					 <span class="head" >Duis aute irure dolor in reprehenderit sed do eiusmod tempor incididunt</span>
+					 <p><strike>$640.89</strike><span class="price">$620.87</span></p>
+				     <button type="button"><span><img src="img/cart.jpg" alt="" /> Add to Cart</span> </button>
+				    
+      </div>
+       <div class="content-md-center-sc"> 
+       	<img src="img/feature-pic2.jpg">
+       	<div class="discount">
+					</div>
+					 <span class="head" >Duis aute irure dolor in reprehenderit sed do eiusmod tempor incididunt</span>
+					 <p><strike>$240.66</strike><span class="price">$220.97</span></p>
+				     <button type="button"><span><img src="img/cart.jpg" alt="" /> Add to Cart</span> </button>
+				    
+       </div>
+        <div class="content-md-center-sd"> 
+      		<img src="img/new-pic3.jpg">
+      	 <div class="discount">
+					</div>
+					 <span class="head" >Duis aute irure dolor in reprehenderit sed do eiusmod tempor incididunt</span>
+					 <p><strike>$640.89</strike><span class="price">$620.87</span></p>
+				     <button type="button"><span><img src="img/cart.jpg" alt="" /> Add to Cart</span> </button>
+				    
+      </div>
+     </div>
+ </div>
+</div>
+   <div class="footer">
+   	  <div class="wrapper">	
+	    
+				<div class="col_1">
+						<h4>Information</h4>
+						<ul>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Customer Service</a></li>
+						<li><a href="#"><span>Advanced Search</span></a></li>
+						<li><a href="#">Orders and Returns</a></li>
+						<li><a href="#"><span>Contact Us</span></a></li>
+						</ul>
+					</div>
+				<div class="col_1">
+					<h4>Why buy from us</h4>
+						<ul>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Customer Service</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#"><span>Site Map</span></a></li>
+						<li><a href="#"><span>Search Terms</span></a></li>
+						</ul>
+				</div>
+				<div class="col_1">
+					<h4>My account</h4>
+						<ul>
+							<li><a href="#">Sign In</a></li>
+							<li><a href="#">View Cart</a></li>
+							<li><a href="#">My Wishlist</a></li>
+							<li><a href="#">Track My Order</a></li>
+							<li><a href="#">Help</a></li>
+						</ul>
+				</div>
+				<div class="col_1">
+					<h4>Contact</h4>
+						<ul>
+							<li><span>+91-123-456789</span></li>
+							<li><span>+00-123-000000</span></li>
+						</ul>
+						<div class="social-icons">
+							<h4>Follow Us</h4>
+					   		  <ul>
+							      <li><a href=""><img src="img/facebook.png"></a></li>
+							      <li><a href=""><img src="img/rss.png"></a></li>
+							      <li><a href=""><img src="img/twitter.png"></a></li>
+						     </ul>
+   	 					</div>
+				</div>
+			</div>
+			<div class="copy_right">
+				<p>&copy; 2020 Mobile Store. All Rights Reserved | Design by <a href="http://w3layouts.com">W3Layouts</a> </p>
+		   </div>
+     </div>
+    
+    <script type="js"></script>
+</body>
+</html>
